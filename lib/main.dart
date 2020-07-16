@@ -5,6 +5,7 @@ import 'package:splashscreen/splashscreen.dart';
 
 import 'app_screens/MyPanel.dart';
 import 'app_screens/RegisterScreen.dart';
+import 'app_screens/Task.dart';
 
 
 void main() => runApp(
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Task()));
     },);
   }
   @override
